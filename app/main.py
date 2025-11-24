@@ -4,8 +4,8 @@ from pydantic import BaseModel, EmailStr
 from typing import Optional, List
 from sqlalchemy.orm import Session
 from datetime import timedelta
-from database import get_db, BlogPostDB
-from auth import (
+from app.database import get_db, BlogPostDB
+from app.auth import (
     UserDB, get_password_hash, authenticate_user, 
     create_access_token, get_current_user, 
     get_user_by_username, get_user_by_email,
